@@ -13,7 +13,7 @@ const Term = function(hours, grades){
 hours:hours,
 grades:[], 
 addGrade: function(given){
-  this.push(given)
+  grades.push(given)
  
 }  
   }
@@ -26,12 +26,12 @@ terms:[]
   }
 
 }
-const Student = function(name,course,term =1){
+const Student = function(name,course,term =1, courses){
   return {
-name,
-course, 
-term
-
+name: name,
+course:course, 
+term:term,
+courses :[]
 
   }
 }
