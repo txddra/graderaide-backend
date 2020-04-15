@@ -22,9 +22,11 @@ addGrade: function(givAsn,givScore){
 const Course = function(name, terms){
   return {
 name:name,
-terms:[]
-  }
-
+terms:[],
+addTerm: function(gHours, gGrades){
+this.terms.push(Term(gHours, gGrades))
+} 
+}
 }
 const Student = function(name,course,term =1, courses){
   return {
