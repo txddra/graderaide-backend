@@ -34,12 +34,13 @@ name: name,
 course:course, 
 term:term,
 courses :[],
-addCourse : function(){
-
+addCourse : function(gName, gTerms){
+this.courses.push(Course(gName, gTerms))
 },
 getAverage : function(){}
   }
 }
+
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
