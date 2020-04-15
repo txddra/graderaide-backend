@@ -12,8 +12,8 @@ const Term = function(hours, grades){
   return{
 hours:hours,
 grades:[], 
-addGrade: function(given){
-  grades.push(given)
+addGrade: function(givAsn,givScore){
+  this.grades.push(Grade(givAsn,givScore))
  
 }  
   }
@@ -31,8 +31,11 @@ const Student = function(name,course,term =1, courses){
 name: name,
 course:course, 
 term:term,
-courses :[]
+courses :[],
+addCourse : function(){
 
+},
+getAverage : function(){}
   }
 }
 /*********************************
