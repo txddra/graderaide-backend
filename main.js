@@ -14,12 +14,16 @@ hours
 
   }
   }
-const Course = function(name){
+const Course = function(name, term){
   return {
 name
   }
 }
-
+const Student = function(){
+  return {
+    
+  }
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
