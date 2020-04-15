@@ -7,11 +7,18 @@ const Grade = function (assignment, score){
     score
   }
 }
-const Term = function(hours){
+const Term = function(hours, theGrades){
+  let grades = []
   return{
-hours,
+hours
+
   }
   }
+const Course = function(name){
+  return {
+name
+  }
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
