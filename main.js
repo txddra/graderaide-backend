@@ -3,21 +3,28 @@
  ******************/
 const Grade = function (assignment, score){
   return {
-    assignment,
-    score
+    assignment:assignment,
+    score:score
   }
 }
 const Term = function(hours, grades){
   
   return{
-hours,
-grades:[]
+hours:hours,
+grades:[], 
+addGrade: function(given){
+  this.push(given)
+ 
+}  
   }
+
   }
-const Course = function(name, term){
+const Course = function(name, terms){
   return {
-name
+name:name,
+terms:[]
   }
+
 }
 const Student = function(name,course,term =1){
   return {
