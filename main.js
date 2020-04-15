@@ -7,6 +7,12 @@ const Grade = function (assignment, score){
     score
   }
 }
+const Term = function(){
+  return{
+    
+  }
+  }
+
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
