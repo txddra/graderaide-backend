@@ -37,8 +37,27 @@ courses :[],
 addCourse : function(gName, gTerms){
 this.courses.push(Course(gName, gTerms))
 },
-getAverage : function(){}
+getAverage : function(cName = this.course, tIndex = this.term-1){
+  
+  for(i = 0; i < this.courses.length; i++){
+    if(this.courses[i].name === cName){
+       
+      let total = 0;
+      let grad = this.courses[i].terms[tIndex];
+     
+for(x = 0; x < grad.grades.length; x++){
+total += grad.grades[x].score;
+
+}
+ let result = total/grad.grades.length
+return result
+    }
   }
+
+}
+
+}
+
 }
 
 /*********************************
