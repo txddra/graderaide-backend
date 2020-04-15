@@ -7,9 +7,9 @@ const Grade = function (assignment, score){
     score
   }
 }
-const Term = function(){
+const Term = function(hours){
   return{
-    
+hours,
   }
   }
 
