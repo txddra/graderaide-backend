@@ -1,9 +1,10 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-const Grade = function (assignment){
+const Grade = function (assignment, score){
   return {
-    assignment
+    assignment,
+    score
   }
 }
 /*********************************
