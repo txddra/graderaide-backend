@@ -19,9 +19,10 @@ const Course = function(name, term){
 name
   }
 }
-const Student = function(name){
+const Student = function(name,course ){
   return {
 name,
+course
 
 
   }
